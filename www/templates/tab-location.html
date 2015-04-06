@@ -1,0 +1,14 @@
+<ion-view view-title="Location">
+  <ion-content>
+    <ion-list
+          show-delete="shouldShowDelete">
+        <ion-item ng-repeat="item in locations" ng-click="setCurrentLoc(item.id)">
+            <b class="small">
+                {{item.name}}
+            </b>
+            <ion-delete-button class="ion-minus-circled" ng-click="remove(item.id)">
+            </ion-delete-button>
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

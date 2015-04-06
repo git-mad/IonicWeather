@@ -1,0 +1,18 @@
+<ion-view view-title="Daily">
+  <ion-content>
+    <div class="card" ng-repeat="day in dailyForecast">
+        <div class="item item-divider">
+            {{day.dayString}}
+        </div>
+        <div class="item dailyDiv">
+            <b class="med">
+                {{day.tempMax}}&deg; / {{day.tempMin}}&deg;
+            </b>
+            <br />
+            <p class="small">
+                {{day.summary}}
+            </p>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

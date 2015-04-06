@@ -1,0 +1,52 @@
+/* Empty. Add your own CSS if you like */
+.largest
+{
+    font-size: 75px;
+}
+.large
+{
+    font-size: 50px;
+}
+.med
+{
+    font-size: 40px;
+}
+.small
+{
+    font-size:30px;
+}
+
+#sky
+{
+    margin-left:50px;
+}
+#location
+{
+    font-size:30px;
+}
+
+.item-body
+{
+    height: 120px;
+    padding-top: 50px;
+}
+
+#hourly
+{
+    height: 200px;
+}
+
+.hourDiv
+{
+    margin-bottom:30px;
+}
+
+.hourRow
+{
+    padding:10px;
+}
+
+.dailyDiv
+{
+    padding-top:25px;
+}

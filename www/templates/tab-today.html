@@ -1,0 +1,100 @@
+<ion-view view-title="Today">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">Weather</div>
+      <div class="item item-body">
+        <div>
+          <b class="med">{{temp}}&deg; F</b>
+          <b id="sky" class="small">{{sky}}</b>
+          <br />
+          <b id="location">{{location}}</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="list list-inset">
+        <ion-list class="list list-inset">
+          <div class="item item-divider">Hourly Forecast</div>
+          <ion-item ng-repeat="hourData in hourlyForecast | limitTo: 5">
+            <b class="small">{{hourData.hour}}</b>
+            <center>
+              <b class="med">{{hourData.temp}}&deg;
+            </center>
+          </ion-item>
+        </ion-list>
+    </div>
+
+            <!-- Note: All of this code can be replaced with ng-repeat!
+            <tr>
+              <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour0.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour0.temp}}&deg;
+                    </div>
+                </td>
+
+                <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour1.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour1.temp}}&deg;
+                    </div>
+                </td>
+
+                <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour2.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour2.temp}}&deg;
+                    </div>
+                </td>
+
+                <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour3.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour3.temp}}&deg;
+                    </div>
+                </td>
+                <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour4.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour4.temp}}&deg;
+                    </div>
+                </td>
+                <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour5.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour5.temp}}&deg;
+                    </div>
+                </td>
+                <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour6.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour6.temp}}&deg;
+                    </div>
+                </td>
+                <td class="hourRow">
+                    <div class="hourDiv">
+                        <b class="med">{{hour7.hour}}</b>
+                    </div>
+                    <div>
+                        <b class="large">{{hour7.temp}}&deg;
+                    </div>
+                </td>
+            </tr>
+          -->
+        </table>
+  </ion-content>
+</ion-view>
